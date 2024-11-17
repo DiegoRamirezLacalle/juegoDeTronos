@@ -6,6 +6,7 @@ class Departamento(models.Model):
 
     def __str__(self):
 <<<<<<< HEAD
+<<<<<<< HEAD
         return self.name
 
 class Season(models.Model):
@@ -24,6 +25,9 @@ class Character(models.Model):
 
     def __str__(self):
         return self.name
+=======
+        return self.nombre
+>>>>>>> parent of 9e34442 (funcionalidad de la pagina web)
 =======
         return self.nombre
 >>>>>>> parent of 9e34442 (funcionalidad de la pagina web)
