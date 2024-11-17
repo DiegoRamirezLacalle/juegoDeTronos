@@ -12,4 +12,5 @@ urlpatterns = [
     path('houses/<int:house_id>/', views.house_detail, name='house_detail'),
     path('seasons/', views.seasons_list, name='seasons_list'),
     path('seasons/<int:season_id>/', views.season_detail, name='season_detail'),
+    path('', views.index, name='index'),  # Ruta principal para la vista "index"
 ]
