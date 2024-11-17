@@ -4,9 +4,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     path('', views.homepage, name='homepage'),
     path('characters/', views.characters_list, name='characters_list'),
     path('characters/<int:character_id>/', views.character_detail, name='character_detail'),
@@ -14,15 +12,4 @@ urlpatterns = [
     path('houses/<int:house_id>/', views.house_detail, name='house_detail'),
     path('seasons/', views.seasons_list, name='seasons_list'),
     path('seasons/<int:season_id>/', views.season_detail, name='season_detail'),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-=======
-=======
->>>>>>> parent of 9e34442 (funcionalidad de la pagina web)
-=======
->>>>>>> parent of 9e34442 (funcionalidad de la pagina web)
-    path('', views.index, name='index'),  # Ruta principal para la vista "index"
 ]
->>>>>>> parent of 9e34442 (funcionalidad de la pagina web)
