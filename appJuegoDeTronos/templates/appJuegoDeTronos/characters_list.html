@@ -36,6 +36,7 @@
                     <h3>{{ character.name }}</h3>
                 </a>
                 <p>{{ character.description }}</p>
+                <img src="{% static 'media/characters/' character.image_name %}" alt="{{ character.name }}">
             </li>
             {% endfor %}
         </ul>

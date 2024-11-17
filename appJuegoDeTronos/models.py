@@ -19,6 +19,7 @@ class Character(models.Model):
     description = models.TextField()
     house = models.ForeignKey(House, related_name='characters', on_delete=models.CASCADE)
     seasons = models.ManyToManyField(Season, related_name='characters')
+    image = models.ImageField(upload_to='characters/') 
 
     def __str__(self):
         return self.name
