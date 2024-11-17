@@ -1,10 +1,11 @@
 from django.db import models
 
-class House(models.Model):
-    name = models.CharField(max_length=100)
-    description = models.TextField()
+class Departamento(models.Model):
+    nombre = models.CharField(max_length=50)
+    telefono = models.IntegerField()
 
     def __str__(self):
+<<<<<<< HEAD
         return self.name
 
 class Season(models.Model):
@@ -23,3 +24,6 @@ class Character(models.Model):
 
     def __str__(self):
         return self.name
+=======
+        return self.nombre
+>>>>>>> parent of 9e34442 (funcionalidad de la pagina web)
